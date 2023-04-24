@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SokobanInterface</string>
+    <string name="sokoban">Сокобан</string>
+    <string name="play">Играть</string>
+    <string name="settings">Настройки</string>
+    <string name="exit">Выход</string>
+</resources>
