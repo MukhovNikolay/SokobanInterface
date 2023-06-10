@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:theme="@style/Theme.SokobanInterface"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/recordsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/records"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toTopOf="@+id/tableRecords"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:id="@+id/tableRecords"
+        android:layout_width="0dp"
+        android:layout_height="450dp"
+        android:layout_marginBottom="64dp"
+        android:stretchColumns="*"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow android:layout_width="fill_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:padding="5dip"
+                android:text="@string/level_name"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:padding="5dip"
+                android:text="@string/count_moves"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:padding="5dip"
+                android:text="@string/time"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/exitMenuRecord"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:text="@string/exitMenu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/drop" />
+
+    <Button
+        android:id="@+id/drop"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:text="@string/dropRecord"
+        app:layout_constraintBottom_toTopOf="@+id/exitMenuRecord"
+        app:layout_constraintEnd_toEndOf="@+id/exitMenuRecord"
+        app:layout_constraintStart_toStartOf="@+id/exitMenuRecord"
+        app:layout_constraintTop_toBottomOf="@+id/tableRecords" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

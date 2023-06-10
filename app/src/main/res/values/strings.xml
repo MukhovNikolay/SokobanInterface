@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">SokobanInterface</string>
+    <string name="sokoban">Сокобан</string>
+    <string name="play">Играть</string>
+    <string name="settings">Настройки</string>
+    <string name="exit">Выход</string>
+    <string name="records">Рекорды</string>
+    <string name="levelChoice">Выбор уровня</string>
+    <string name="exitMenu">Назад в меню</string>
+    <string name="dropRecord">Сброс рекордов</string>
+    <string name="level_name">Название уровня</string>
+    <string name="count_moves">Количество ходов</string>
+    <string name="time">Время прохождения</string>
+
+</resources>
